@@ -6,7 +6,56 @@ using System.Threading.Tasks;
 
 namespace _01_KomodoCafeClassLibrary
 {
-    class MenuRepo
+    public class MenuRepo
     {
+        private readonly List<Menu> _cafeMenu = new List<Menu>();
+
+        // Add meal to menu
+        public void AddMealToMenu(Menu content)
+        {
+            _cafeMenu.Add(content);
+        }
+
+        // Read menu items
+        public List<Menu> GetMenu()
+        {
+            return _cafeMenu;
+        }
+
+        // Delete meal by meal id
+        public bool RemoveMealFromMenu(int menuId)
+        {
+            Menu content = GetMealById(menuId);
+
+            if (content == null)
+            {
+                return false;
+            }
+
+            int initialCount = _cafeMenu.Count;
+            _cafeMenu.Remove(content);
+
+            if (initialCount > _cafeMenu.Count)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        // Get meal by meal number
+        public Menu GetMealById(int menuId)
+        {
+            foreach (Menu menu in _cafeMenu)
+            {
+                if(menu.MealNumber == menuId)
+                {
+                    return menu;
+                }
+            }
+            return null;
+        }
     }
 }

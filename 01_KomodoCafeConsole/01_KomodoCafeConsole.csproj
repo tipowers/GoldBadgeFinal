@@ -7,7 +7,7 @@
     <ProjectGuid>{6436791A-9A30-41CF-BDE5-337C8D58239C}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>_01_KomodoCafeConsole</RootNamespace>
-    <AssemblyName>_01_KomodoCafeConsole</AssemblyName>
+    <AssemblyName>01_KomodoCafeConsole</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -44,10 +44,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
+    <Compile Include="ProgramUI.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\01_KomodoCafeClassLibrary\01_KomodoCafeClassLibrary.csproj">
+      <Project>{879c7005-d478-4970-ab44-0f832e014584}</Project>
+      <Name>01_KomodoCafeClassLibrary</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

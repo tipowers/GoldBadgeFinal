@@ -10,6 +10,8 @@ namespace _01_KomodoCafeConsole
     {
         static void Main(string[] args)
         {
+            ProgramUI program = new ProgramUI();
+            program.Run();
         }
     }
 }
