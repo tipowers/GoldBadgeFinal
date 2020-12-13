@@ -1,0 +1,10 @@
+C:\Users\tpowe\Desktop\d3V\ElevenFiftyProjects\DotNetProjects\GoldBadgeFinal\02_KomodoClaimsConsole\bin\Debug\02_KomodoClaimsConsole.exe.config
+C:\Users\tpowe\Desktop\d3V\ElevenFiftyProjects\DotNetProjects\GoldBadgeFinal\02_KomodoClaimsConsole\bin\Debug\02_KomodoClaimsConsole.exe
+C:\Users\tpowe\Desktop\d3V\ElevenFiftyProjects\DotNetProjects\GoldBadgeFinal\02_KomodoClaimsConsole\bin\Debug\02_KomodoClaimsConsole.pdb
+C:\Users\tpowe\Desktop\d3V\ElevenFiftyProjects\DotNetProjects\GoldBadgeFinal\02_KomodoClaimsConsole\bin\Debug\02_KomodoClaimsDept.dll
+C:\Users\tpowe\Desktop\d3V\ElevenFiftyProjects\DotNetProjects\GoldBadgeFinal\02_KomodoClaimsConsole\bin\Debug\02_KomodoClaimsDept.pdb
+C:\Users\tpowe\Desktop\d3V\ElevenFiftyProjects\DotNetProjects\GoldBadgeFinal\02_KomodoClaimsConsole\obj\Debug\02_KomodoClaimsConsole.csprojAssemblyReference.cache
+C:\Users\tpowe\Desktop\d3V\ElevenFiftyProjects\DotNetProjects\GoldBadgeFinal\02_KomodoClaimsConsole\obj\Debug\02_KomodoClaimsConsole.csproj.CoreCompileInputs.cache
+C:\Users\tpowe\Desktop\d3V\ElevenFiftyProjects\DotNetProjects\GoldBadgeFinal\02_KomodoClaimsConsole\obj\Debug\02_KomodoClaimsConsole.csproj.CopyComplete
+C:\Users\tpowe\Desktop\d3V\ElevenFiftyProjects\DotNetProjects\GoldBadgeFinal\02_KomodoClaimsConsole\obj\Debug\02_KomodoClaimsConsole.exe
+C:\Users\tpowe\Desktop\d3V\ElevenFiftyProjects\DotNetProjects\GoldBadgeFinal\02_KomodoClaimsConsole\obj\Debug\02_KomodoClaimsConsole.pdb
