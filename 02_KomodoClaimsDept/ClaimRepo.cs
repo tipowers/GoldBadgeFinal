@@ -17,31 +17,50 @@ namespace _02_KomodoClaimsDept
         }
 
         // Read
+        // The return type is a Queue because we need to return a queue of items
         public Queue<Claim> GetClaimsQueue()
         {
             return _queueOfClaims;
         }
 
-        /*public Queue<Claim> GetNextClaimInQueue()
+        // Read
+        // The return type is a Claim because we only need to return one claim
+        public Claim GetNextClaim()
         {
-            return _queueOfClaims.Peek;
-        }*/
+            return _queueOfClaims.Peek();
+        }
+
+        // Update
+        // Issue here somewhere.. ask in Learning Gym or class
+        public Claim HandleClaim(string userInput)
+        {
+            if (userInput == "y")
+            {
+                return _queueOfClaims.Dequeue();
+            }
+            else
+            {
+                return _queueOfClaims.Peek();
+            }
+        }
 
         // Is Claim Valid Helper Method
-        /*public bool isClaimValid(bool isValid)
+        // Issue with this somewhere...ask about this in Learning Gym or class
+        public bool IsClaimValid()
         {
-            foreach (ClaimPoco claim in _queueOfClaims)
-            {
-                DateTime currentDate = DateTime.Today;
+            foreach (Claim claim in _queueOfClaims)
+            { 
                 DateTime incidentDate = claim.DateOfIncident;
                 DateTime claimDate = claim.DateOfClaim;
 
-                if (currentDate - claimDate > 30 )
+                TimeSpan difference = claimDate.Subtract(incidentDate);
+
+                if (difference.TotalDays < 31)
                 {
                     return true;
                 }
             }
             return false;
-        }*/
+        }
     }
 }

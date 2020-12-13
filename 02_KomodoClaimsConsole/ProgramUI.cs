@@ -36,7 +36,7 @@ namespace _02_KomodoClaimsConsole
                         DisplayAllClaims();
                         break;
                     case "2":
-                        //DisplayNextClaim();
+                        DisplayNextClaim();
                         break;
                     case "3":
                         CreateNewClaim();
@@ -71,18 +71,34 @@ namespace _02_KomodoClaimsConsole
                     $"Type: {claim.TypeOfClaim}\n" +
                     $"Description: {claim.Description}\n" +
                     $"Amount: {claim.ClaimAmount}\n" +
-                    $"DateOfAccident: {claim.DateOfIncident}\n" +
-                    $"DateOfClaim: {claim.DateOfClaim}\n" +
+                    $"Date Of Accident: {claim.DateOfIncident}\n" +
+                    $"Date Of Claim: {claim.DateOfClaim}\n" +
                     $"IsValid: {claim.IsValid}\n");
             }
         }
 
-        /*private void DisplayNextClaim()
+        private void DisplayNextClaim()
         {
             Console.Clear();
+            Claim nextClaimInQueue = _claims.GetNextClaim();
 
-            Claim nextClaimInQueue = _claims.
-        }*/
+            Console.WriteLine($"Claim ID: {nextClaimInQueue.ClaimId}\n" +
+                    $"Type: {nextClaimInQueue.TypeOfClaim}\n" +
+                    $"Description: {nextClaimInQueue.Description}\n" +
+                    $"Amount: {nextClaimInQueue.ClaimAmount}\n" +
+                    $"Date Of Accident: {nextClaimInQueue.DateOfIncident}\n" +
+                    $"Date Of Claim: {nextClaimInQueue.DateOfClaim}\n" +
+                    $"IsValid: {nextClaimInQueue.IsValid}\n");
+
+            // Issue from here (line 93 to 100)...bring up in learning gym or in class
+            Console.WriteLine("Do you want to deal with this claim now: (y/n)");
+            string input = Console.ReadLine().ToLower();
+
+            Console.Clear();
+            Claim differentClaimInQueue = _claims.HandleClaim(input);
+
+            Console.WriteLine(differentClaimInQueue);
+        }
 
         private void CreateNewClaim()
         {
@@ -94,34 +110,42 @@ namespace _02_KomodoClaimsConsole
             int claimIdAsInt = int.Parse(claimIdAsString);
             newClaim.ClaimId = claimIdAsInt;
 
-            Console.WriteLine("Enter the Claim Type Number:\n" +
-                "1. Car" +
-                "2. Home" +
-                "3. Theft");
+            Console.WriteLine("\nEnter the Claim Type Number:\n" +
+                "1. Car\n" +
+                "2. Home\n" +
+                "3. Theft\n");
             string claimTypeAsString = Console.ReadLine();
             int claimTypeAsInt = int.Parse(claimTypeAsString);
             newClaim.TypeOfClaim = (ClaimType)claimTypeAsInt;
 
-            Console.WriteLine("Enter the Claim Description:");
+            Console.WriteLine("\nEnter the Claim Description:");
             newClaim.Description = Console.ReadLine();
 
-            Console.WriteLine("Enter the Amount of Damage:");
+            Console.WriteLine("\nEnter the Amount of Damage:");
             newClaim.ClaimAmount = Console.ReadLine();
 
-            Console.WriteLine("Enter the Date of Accident:");
+            Console.WriteLine("\nEnter the Date of Accident: (mm/dd/yyyy)");
+            string accidentDateAsString = Console.ReadLine();
+            DateTime accidentDateAsObject = DateTime.Parse(accidentDateAsString);
+            newClaim.DateOfIncident = accidentDateAsObject;
 
-            Console.WriteLine("Enter the Date of Claim:");
+            Console.WriteLine("\nEnter the Date of Claim: (mm/dd/yyyy)");
+            string dateOfClaimAsString = Console.ReadLine();
+            DateTime dateOfClaimAsObject = DateTime.Parse(dateOfClaimAsString);
+            newClaim.DateOfClaim = dateOfClaimAsObject;
 
-            // Call isValid helper method here when fixed
+            // Call isValid helper method
+            bool isValid = _claims.IsClaimValid();
+            newClaim.IsValid = isValid;
+            Console.WriteLine($"\nIsValid: {isValid}");
 
             _claims.AddClaimToQueue(newClaim);
-
         }
 
         public void SeedContentList()
         {
             Claim claimOne = new Claim(1, ClaimType.Car, "Car accident on 465.", "$400.00", new DateTime(2018, 04, 25), new DateTime(2018, 04, 27), true);
-            Claim claimTwo = new Claim(2, ClaimType.Home, "House fire in kitchen.", "$4000.00", new DateTime(2018, 04, 11), new DateTime(2018, 04, 12), true);
+            Claim claimTwo = new Claim(2, ClaimType.Home, "House fire in kitchen.", "$4,000.00", new DateTime(2018, 04, 11), new DateTime(2018, 04, 12), true);
             Claim claimThree = new Claim(3, ClaimType.Theft, "Stolen pancakes.", "$4.00", new DateTime(2018, 04, 27), new DateTime(2018, 06, 01), false);
 
             _claims.AddClaimToQueue(claimOne);
