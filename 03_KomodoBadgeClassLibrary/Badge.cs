@@ -1,0 +1,27 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _03_KomodoBadgeClassLibrary
+{
+    public class Badge
+    {
+        public int BadgeID { get; set; }
+        public List<string> DoorNames { get; set; } = new List<string>();
+
+        public Badge()
+        {
+            DoorNames = new List<string>();
+        }
+
+        // public Badge() { }
+
+        public Badge(int badgeID, IEnumerable<string> doorNames)
+        {
+            BadgeID = badgeID;
+            DoorNames = doorNames.ToList();
+        }
+    }
+}
