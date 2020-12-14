@@ -73,7 +73,13 @@ namespace _03_KomodoBadgeConsole
 
         public void SeedContentList()
         {
-            // Badge badgeOne = new Badge(1, doorNames: { "A7", });
+            Badge badgeOne = new Badge(12345, new List<string> { "A7" });
+            Badge badgeTwo = new Badge(22345, new List<string> { "A1,", "A4,", "B1,", "B2" });
+            Badge badgeThree = new Badge(32345, new List<string> { "A4,", "A5" });
+
+            /*_badges.AddBadgeToDictionary(badgeOne);
+            _badges.AddBadgeToDictionary(badgeTwo);
+            _badges.AddBadgeToDictionary(badgeThree);*/
         }
     }
 }

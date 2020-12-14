@@ -11,17 +11,12 @@ namespace _03_KomodoBadgeClassLibrary
         public int BadgeID { get; set; }
         public List<string> DoorNames { get; set; } = new List<string>();
 
-        public Badge()
-        {
-            DoorNames = new List<string>();
-        }
+        public Badge() { }
 
-        // public Badge() { }
-
-        public Badge(int badgeID, IEnumerable<string> doorNames)
+        public Badge(int badgeID, List<string> doorNames)
         {
             BadgeID = badgeID;
-            DoorNames = doorNames.ToList();
+            DoorNames = doorNames;
         }
     }
 }

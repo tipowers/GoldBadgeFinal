@@ -11,9 +11,9 @@ namespace _03_KomodoBadgeClassLibrary
         private Dictionary<int, Badge> _badgeDictionary = new Dictionary<int, Badge>();
 
         // Create
-        public void AddBadgeToDictionary(int id, Badge badgeContent)
+        public void AddBadgeToDictionary(int id, List<String> stringList)
         {
-            _badgeDictionary.Add(id, badgeContent);
+           // _badgeDictionary.Add(id, Badge stringList);
         }
 
         // Read
