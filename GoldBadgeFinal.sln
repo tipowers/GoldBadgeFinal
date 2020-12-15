@@ -13,13 +13,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_KomodoClaimsClassLibrary
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_KomodoClaimsConsole", "02_KomodoClaimsConsole\02_KomodoClaimsConsole.csproj", "{E5C04CCB-C5F6-448F-8DF2-7C5802129560}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_KomodoClaimsTests", "02_KomodoClaimsTests\02_KomodoClaimsTests.csproj", "{05D9EA36-397C-484D-9CBD-CD8BACA9085C}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_KomodoBadgeClassLibrary", "03_KomodoBadgeClassLibrary\03_KomodoBadgeClassLibrary.csproj", "{B327554E-38D1-4B1E-BA08-4E55E3ECD631}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_KomodoBadgeConsole", "03_KomodoBadgeConsole\03_KomodoBadgeConsole.csproj", "{9AB5830F-8819-4FF8-AC82-623B937A33C8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_KomodoBadgeTests", "03_KomodoBadgeTests\03_KomodoBadgeTests.csproj", "{8E900D9B-9C97-48D0-AD5C-E3F2A71BCA21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_KomodoClaimsTests", "02_KomodoClaimsTests\02_KomodoClaimsTests.csproj", "{A36B3106-7AC7-436A-BEC4-BB407BD29B9E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,10 +47,6 @@ Global
 		{E5C04CCB-C5F6-448F-8DF2-7C5802129560}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E5C04CCB-C5F6-448F-8DF2-7C5802129560}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E5C04CCB-C5F6-448F-8DF2-7C5802129560}.Release|Any CPU.Build.0 = Release|Any CPU
-		{05D9EA36-397C-484D-9CBD-CD8BACA9085C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{05D9EA36-397C-484D-9CBD-CD8BACA9085C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{05D9EA36-397C-484D-9CBD-CD8BACA9085C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{05D9EA36-397C-484D-9CBD-CD8BACA9085C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B327554E-38D1-4B1E-BA08-4E55E3ECD631}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B327554E-38D1-4B1E-BA08-4E55E3ECD631}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B327554E-38D1-4B1E-BA08-4E55E3ECD631}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -63,6 +59,10 @@ Global
 		{8E900D9B-9C97-48D0-AD5C-E3F2A71BCA21}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8E900D9B-9C97-48D0-AD5C-E3F2A71BCA21}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8E900D9B-9C97-48D0-AD5C-E3F2A71BCA21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A36B3106-7AC7-436A-BEC4-BB407BD29B9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A36B3106-7AC7-436A-BEC4-BB407BD29B9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A36B3106-7AC7-436A-BEC4-BB407BD29B9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A36B3106-7AC7-436A-BEC4-BB407BD29B9E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

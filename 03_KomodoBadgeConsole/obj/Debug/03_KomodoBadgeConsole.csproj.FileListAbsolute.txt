@@ -1,0 +1,10 @@
+C:\Users\tpowe\Desktop\d3V\ElevenFiftyProjects\DotNetProjects\GoldBadgeFinal\03_KomodoBadgeConsole\bin\Debug\03_KomodoBadgeConsole.exe.config
+C:\Users\tpowe\Desktop\d3V\ElevenFiftyProjects\DotNetProjects\GoldBadgeFinal\03_KomodoBadgeConsole\bin\Debug\03_KomodoBadgeConsole.exe
+C:\Users\tpowe\Desktop\d3V\ElevenFiftyProjects\DotNetProjects\GoldBadgeFinal\03_KomodoBadgeConsole\bin\Debug\03_KomodoBadgeConsole.pdb
+C:\Users\tpowe\Desktop\d3V\ElevenFiftyProjects\DotNetProjects\GoldBadgeFinal\03_KomodoBadgeConsole\bin\Debug\03_KomodoBadgeClassLibrary.dll
+C:\Users\tpowe\Desktop\d3V\ElevenFiftyProjects\DotNetProjects\GoldBadgeFinal\03_KomodoBadgeConsole\bin\Debug\03_KomodoBadgeClassLibrary.pdb
+C:\Users\tpowe\Desktop\d3V\ElevenFiftyProjects\DotNetProjects\GoldBadgeFinal\03_KomodoBadgeConsole\obj\Debug\03_KomodoBadgeConsole.csprojAssemblyReference.cache
+C:\Users\tpowe\Desktop\d3V\ElevenFiftyProjects\DotNetProjects\GoldBadgeFinal\03_KomodoBadgeConsole\obj\Debug\03_KomodoBadgeConsole.csproj.CoreCompileInputs.cache
+C:\Users\tpowe\Desktop\d3V\ElevenFiftyProjects\DotNetProjects\GoldBadgeFinal\03_KomodoBadgeConsole\obj\Debug\03_KomodoBadgeConsole.csproj.CopyComplete
+C:\Users\tpowe\Desktop\d3V\ElevenFiftyProjects\DotNetProjects\GoldBadgeFinal\03_KomodoBadgeConsole\obj\Debug\03_KomodoBadgeConsole.exe
+C:\Users\tpowe\Desktop\d3V\ElevenFiftyProjects\DotNetProjects\GoldBadgeFinal\03_KomodoBadgeConsole\obj\Debug\03_KomodoBadgeConsole.pdb

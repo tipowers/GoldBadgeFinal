@@ -1,0 +1,16 @@
+C:\Users\tpowe\Desktop\d3V\ElevenFiftyProjects\DotNetProjects\GoldBadgeFinal\03_KomodoBadgeTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\tpowe\Desktop\d3V\ElevenFiftyProjects\DotNetProjects\GoldBadgeFinal\03_KomodoBadgeTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\tpowe\Desktop\d3V\ElevenFiftyProjects\DotNetProjects\GoldBadgeFinal\03_KomodoBadgeTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\tpowe\Desktop\d3V\ElevenFiftyProjects\DotNetProjects\GoldBadgeFinal\03_KomodoBadgeTests\bin\Debug\03_KomodoBadgeTests.dll
+C:\Users\tpowe\Desktop\d3V\ElevenFiftyProjects\DotNetProjects\GoldBadgeFinal\03_KomodoBadgeTests\bin\Debug\03_KomodoBadgeTests.pdb
+C:\Users\tpowe\Desktop\d3V\ElevenFiftyProjects\DotNetProjects\GoldBadgeFinal\03_KomodoBadgeTests\bin\Debug\03_KomodoBadgeClassLibrary.dll
+C:\Users\tpowe\Desktop\d3V\ElevenFiftyProjects\DotNetProjects\GoldBadgeFinal\03_KomodoBadgeTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\tpowe\Desktop\d3V\ElevenFiftyProjects\DotNetProjects\GoldBadgeFinal\03_KomodoBadgeTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\tpowe\Desktop\d3V\ElevenFiftyProjects\DotNetProjects\GoldBadgeFinal\03_KomodoBadgeTests\bin\Debug\03_KomodoBadgeClassLibrary.pdb
+C:\Users\tpowe\Desktop\d3V\ElevenFiftyProjects\DotNetProjects\GoldBadgeFinal\03_KomodoBadgeTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\tpowe\Desktop\d3V\ElevenFiftyProjects\DotNetProjects\GoldBadgeFinal\03_KomodoBadgeTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\tpowe\Desktop\d3V\ElevenFiftyProjects\DotNetProjects\GoldBadgeFinal\03_KomodoBadgeTests\obj\Debug\03_KomodoBadgeTests.csprojAssemblyReference.cache
+C:\Users\tpowe\Desktop\d3V\ElevenFiftyProjects\DotNetProjects\GoldBadgeFinal\03_KomodoBadgeTests\obj\Debug\03_KomodoBadgeTests.csproj.CoreCompileInputs.cache
+C:\Users\tpowe\Desktop\d3V\ElevenFiftyProjects\DotNetProjects\GoldBadgeFinal\03_KomodoBadgeTests\obj\Debug\03_KomodoBadgeTests.csproj.CopyComplete
+C:\Users\tpowe\Desktop\d3V\ElevenFiftyProjects\DotNetProjects\GoldBadgeFinal\03_KomodoBadgeTests\obj\Debug\03_KomodoBadgeTests.dll
+C:\Users\tpowe\Desktop\d3V\ElevenFiftyProjects\DotNetProjects\GoldBadgeFinal\03_KomodoBadgeTests\obj\Debug\03_KomodoBadgeTests.pdb

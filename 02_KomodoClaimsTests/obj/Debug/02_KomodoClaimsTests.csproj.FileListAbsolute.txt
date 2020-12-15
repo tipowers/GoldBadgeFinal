@@ -1,0 +1,2 @@
+C:\Users\tpowe\Desktop\d3V\ElevenFiftyProjects\DotNetProjects\GoldBadgeFinal\02_KomodoClaimsTests\obj\Debug\02_KomodoClaimsTests.csprojAssemblyReference.cache
+C:\Users\tpowe\Desktop\d3V\ElevenFiftyProjects\DotNetProjects\GoldBadgeFinal\02_KomodoClaimsTests\obj\Debug\02_KomodoClaimsTests.csproj.CoreCompileInputs.cache
