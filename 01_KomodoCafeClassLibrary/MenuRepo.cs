@@ -10,7 +10,7 @@ namespace _01_KomodoCafeClassLibrary
     {
         private readonly List<Menu> _cafeMenu = new List<Menu>();
 
-        // Add meal to menu
+        // Create - Add meal to menu
         public void AddMealToMenu(Menu content)
         {
             _cafeMenu.Add(content);
@@ -21,6 +21,9 @@ namespace _01_KomodoCafeClassLibrary
         {
             return _cafeMenu;
         }
+
+        // Per assignment prompt...no update method is required
+        // If user needs to update a menu item they must delete it and create a new meal
 
         // Delete meal by meal id
         public bool RemoveMealFromMenu(int menuId)
