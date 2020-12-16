@@ -20,20 +20,38 @@ namespace _01_KomodoCafeTests
             _repo.AddMealToMenu(_content);
         }
 
+        // Still need Read test method...more research needed
+
         // Add method
-        /*[TestMethod]
+        [TestMethod]
         public void AddToMenu_ShouldGetNotNull()
         {
             // Arrange --> Setting up the playing field
             Menu content = new Menu();
-            content.MealName = "Philly Cheesesteak";
+            content.MealNumber = 5;
             MenuRepo repository = new MenuRepo();
 
             // Act --> Get/Run the we want to test
             repository.AddMealToMenu(content);
-            Menu contentFromMenu = repository.AddMealToMenu("Philly Cheesesteak");
+            Menu contentFromMenu = repository.GetMealById(5);
 
             // Assert --> Use the assert class to verify the expected outcome
-        }*/
+            Assert.IsNotNull(contentFromMenu);
+        }
+
+        // Delete method
+        [TestMethod]
+        public void DeleteMeal_ShouldReturnTreu()
+        {
+            // Arrange which is in the...
+            // ...Test initialize method ^
+
+            // Act
+            bool deleteResult = _repo.RemoveMealFromMenu(_content.MealNumber);
+
+            // Assert
+            Assert.IsTrue(deleteResult);
+
+        }
     }
 }

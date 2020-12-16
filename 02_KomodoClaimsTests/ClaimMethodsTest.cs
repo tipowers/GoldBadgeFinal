@@ -9,6 +9,7 @@ namespace _02_KomodoClaimsTests
         [TestMethod]
         public void TestMethod1()
         {
+            Claim
         }
     }
 }
