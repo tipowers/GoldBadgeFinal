@@ -1,6 +1,7 @@
 ﻿using _01_KomodoCafeClassLibrary;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
+using System.Collections.Generic;
 
 namespace _01_KomodoCafeTests
 {
@@ -20,7 +21,19 @@ namespace _01_KomodoCafeTests
             _repo.AddMealToMenu(_content);
         }
 
-        // Still need Read test method...more research needed
+        // Read method
+        [TestMethod]
+        public void DisplayMenu_ShouldReturnMenu()
+        {
+            // Arrange, which is in the...
+            // ..Test initialize method ^
+
+            // Act
+            List<Menu> listFromRepo = _repo.GetMenu();
+
+            // Assert
+            Assert.IsNotNull(listFromRepo);
+        }
 
         // Add method
         [TestMethod]
@@ -41,7 +54,7 @@ namespace _01_KomodoCafeTests
 
         // Delete method
         [TestMethod]
-        public void DeleteMeal_ShouldReturnTreu()
+        public void DeleteMeal_ShouldReturnTrue()
         {
             // Arrange which is in the...
             // ...Test initialize method ^
