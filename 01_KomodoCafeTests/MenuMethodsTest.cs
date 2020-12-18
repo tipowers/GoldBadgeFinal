@@ -20,22 +20,8 @@ namespace _01_KomodoCafeTests
 
             _repo.AddMealToMenu(_content);
         }
-
-        // Read method
-        [TestMethod]
-        public void DisplayMenu_ShouldReturnMenu()
-        {
-            // Arrange, which is in the...
-            // ..Test initialize method ^
-
-            // Act
-            List<Menu> listFromRepo = _repo.GetMenu();
-
-            // Assert
-            Assert.IsNotNull(listFromRepo);
-        }
-
-        // Add method
+        
+        // Create method
         [TestMethod]
         public void AddToMenu_ShouldGetNotNull()
         {
@@ -51,6 +37,21 @@ namespace _01_KomodoCafeTests
             // Assert --> Use the assert class to verify the expected outcome
             Assert.IsNotNull(contentFromMenu);
         }
+
+        // Read method
+        [TestMethod]
+        public void DisplayMenu_ShouldReturnNotNull()
+        {
+            // Arrange, which is in the...
+            // ..Test initialize method ^
+
+            // Act
+            List<Menu> listFromRepo = _repo.GetMenu();
+
+            // Assert
+            Assert.IsNotNull(listFromRepo);
+        }
+
 
         // Delete method
         [TestMethod]

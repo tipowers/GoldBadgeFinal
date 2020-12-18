@@ -64,6 +64,7 @@ namespace _03_KomodoBadgeClassLibrary
 
         // Delete method...if we want to delete all doors from an existing badge
         // This currently removes the entire user and not just the doornames...not required
+        // Also NOT tested as this method was not a required part of assignment.
         public bool RemoveAllDoorsFromBadge(int id)
         {
             Badge content = GetBadgeByKeyValue(id);
