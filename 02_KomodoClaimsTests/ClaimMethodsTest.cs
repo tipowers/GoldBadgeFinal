@@ -1,4 +1,5 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using _02_KomodoClaimsDept;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 
 namespace _02_KomodoClaimsTests
@@ -6,10 +7,6 @@ namespace _02_KomodoClaimsTests
     [TestClass]
     public class ClaimMethodsTest
     {
-        [TestMethod]
-        public void TestMethod1()
-        {
-            //Claim
-        }
+        
     }
 }

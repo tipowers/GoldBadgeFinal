@@ -1,6 +1,7 @@
 ﻿using _03_KomodoBadgeClassLibrary;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
+using System.Collections.Generic;
 
 namespace _03_KomodoBadgeTests
 {
@@ -19,11 +20,16 @@ namespace _03_KomodoBadgeTests
             Assert.AreEqual(expected, actual);
         }
 
-        /*[TestMethod]
+        [TestMethod]
         public void SetDoorNamesList_ShouldSetListOfStrings()
         {
             Badge content = new Badge();
-            content.DoorNames = {"A7", };
-        }*/
+            content.DoorNames = new List<string> { "A7" };
+
+            List<string> expected = new List<string> { "A7" };
+            List<string> actual = content.DoorNames;
+
+            Assert.AreEqual(expected, actual);
+        }
     }
 }

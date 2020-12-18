@@ -19,13 +19,13 @@ namespace _02_KomodoClaimsDept
 
         public Claim() { }
 
-        public Claim(int claimId, ClaimType typeOfClaim, string description, string claimAmount, DateTime dateOfInicident, DateTime dateOfClaim, bool isValid)
+        public Claim(int claimId, ClaimType typeOfClaim, string description, string claimAmount, DateTime dateOfIncident, DateTime dateOfClaim, bool isValid)
         {
             ClaimId = claimId;
             TypeOfClaim = typeOfClaim;
             Description = description;
             ClaimAmount = claimAmount;
-            DateOfIncident = dateOfInicident;
+            DateOfIncident = dateOfIncident;
             DateOfClaim = dateOfClaim;
             IsValid = isValid;
         }
