@@ -23,26 +23,7 @@ namespace _03_KomodoBadgeClassLibrary
         }
 
         // Update
-        public bool UpdateDictionaryBadges(int originalKey, Badge newContent)
-        {
-            Badge oldContent = GetBadgeByKeyValue(originalKey);
-
-            if (oldContent != null)
-            {
-                oldContent.BadgeID = newContent.BadgeID;
-                oldContent.DoorNames = newContent.DoorNames;
-
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-        }
-
-        // Delete method...we want to delete all doors from an existing badge
-        // This currently removes the entire user and not just the doornames...broken
-        public bool RemoveDoorFromBadge(int id)
+        public bool AddDoorToBadge(int id, string doorToAdd)
         {
             Badge content = GetBadgeByKeyValue(id);
 
@@ -51,28 +32,62 @@ namespace _03_KomodoBadgeClassLibrary
                 return false;
             }
 
-            int initialCount = _badgeDictionary.Count;
-            _badgeDictionary.Remove(id);
-
-            if (initialCount > _badgeDictionary.Count)
+            foreach (var door in content.DoorNames)
             {
-                return true;
+                if (door.Equals(doorToAdd))
+                {
+                    content.DoorNames.Add(door);
+                }
             }
-            else
+            return true;
+        }
+
+        // Delete
+        public bool RemoveDoorFromBadge(int id, string doorToRemove)
+        {
+            Badge content = GetBadgeByKeyValue(id);
+
+            if (content == null)
             {
                 return false;
             }
+
+            foreach (var door in content.DoorNames)
+            {
+                if (door.Equals(doorToRemove))
+                {
+                    content.DoorNames.Remove(door);
+                }
+            }
+            return true;
+        }
+
+        // Delete method...if we want to delete all doors from an existing badge
+        // This currently removes the entire user and not just the doornames...not required
+        public bool RemoveAllDoorsFromBadge(int id)
+        {
+            Badge content = GetBadgeByKeyValue(id);
+
+            if (content == null)
+            {
+                return false;
+            }
+
+            foreach (var door in content.DoorNames)
+            {
+                content.DoorNames.Remove(door);               
+            }
+            return true;
         }
 
         // Badge helper
-        // This is obvs broken as well...fix to come
         public Badge GetBadgeByKeyValue(int id)
         {
-            foreach (Badge content in _badgeDictionary)
+            foreach (var kvp in _badgeDictionary)
             {
-                if (content.BadgeID == id)
+                if (kvp.Value.BadgeID == id)
                 {
-                    return content;
+                    return kvp.Value;
                 }
             }
             return null;
